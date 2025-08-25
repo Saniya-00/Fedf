@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Demo</title>
+    <style>
+        .container{
+            display:grid;
+            grid-row: 10% 80% 10%;
+            grid-column: 35% 30% 30%;
+            height: 100vh;
+
+
+        }
+        .kl{
+            background-color:rgb(210, 172, 199);
+            text-align: center;
+            grid-row:1/2 ;
+            grid-column: 1/5;
+            height: 10vh;
+
+
+        }
+        .s1{
+            background-color: crimson;
+             text-align: center;
+             grid-row:2/3 ;
+            grid-column:1/2 ;
+            height: 25vh;
+        }
+        .s2{
+            background-color: aqua;
+             text-align: center;
+             grid-row:2/3;
+            grid-column: 2/3;
+            height: 25vh;
+        }
+        .s3{
+            background-color: rgb(203, 22, 223);
+             text-align: center;
+             grid-row:2/3;
+            grid-column: 3/4;
+            height: 25vh;
+        }
+        .mc{
+            background-color: rgb(207, 106, 51);
+             text-align: center;
+             grid-row:3/4 ;
+            grid-column: 1/4;
+            height: 80vh;
+        }
+        .sb{
+            background-color: burlywood;
+             text-align: center;
+             grid-row:2/4 ;
+            grid-column: 4/5;
+            height: 90vh;
+
+        }
+        .ft{
+            background-color: darkkhaki;
+             text-align: center;
+             grid-row:4/5 ;
+            grid-column: 1/5;
+            height: 10vh;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kl">KL University</div>
+        <div class="s1">small box 1</div>
+        <div class="s2">small box 2</div>
+        <div class="s3">small box 3</div>
+        <div class="mc">main content</div>
+        <div class="sb">side bar</div>
+        <div class="ft">footer</div>
+
+    </div>
+</body>
+</html>

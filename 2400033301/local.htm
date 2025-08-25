@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        welcone page
+    </h2>
+    <input type="text" id="username" place holder="enter your name">
+
+
+    <button onclick="saveName()">save name</button>
+    <p id="greeting"></p>
+    <script>
+        function saveName(){
+            let Savename = documnet.getElementById("username").value;
+            if (saveName == ""){
+                alert("please enter your name");
+                return;
+            }
+            localStorage.setItem("username", saveName);
+            document.getElementById("greeting").textContent ="Hello, " + saveName;
+        }
+        window.onload = function() {
+            let savedName = localStorage.getItem("username");
+            if(savedName){
+                document.getElementById("greeting").textContent ="Hello, " + savedName;
+            }
+        };
+    </script>
+</body>
+</html>

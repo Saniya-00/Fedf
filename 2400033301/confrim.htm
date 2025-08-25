@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert('hello this is alert box')">show alert</button>
+    <button onclick="deleteData()">Delete Item</button>
+    <script>
+        function deleteData(){
+            const confirmDelete = confirm("Are you sure you want to  delete");
+            if(confirmDelete){
+                alert("Item deleted");
+            }
+            else{
+                alert("deletion cancelled");
+            }
+        }
+    </script>
+</body>
+</html>
